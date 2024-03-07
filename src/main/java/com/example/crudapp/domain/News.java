@@ -1,7 +1,6 @@
 package com.example.crudapp.domain;
 
 import jakarta.persistence.*;
-import lombok.Builder;
 import lombok.Data;
 
 @Entity
@@ -16,8 +15,4 @@ public class News {
     @ManyToOne
     @JoinColumn(name = "type_id")
     private NewsType type;
-
-    public News() {
-
-    }
 }
